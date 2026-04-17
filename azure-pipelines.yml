@@ -1,0 +1,13 @@
+trigger: none
+
+pool:
+  name: sk-pool
+
+steps:
+- script: |
+    echo "Running on:"
+    uname -a
+    whoami
+    df -h
+    uname -m
+  displayName: "Test self-hosted agent"
